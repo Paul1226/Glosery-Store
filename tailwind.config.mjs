@@ -11,7 +11,7 @@ export default {
 				salmon:'#F38160',
 				mustard:'#F0B70D',
 				masala:'#403C39',
-				mountain:'#403C39',
+				mountain:'#949494',
 			}
 		},
 	},
