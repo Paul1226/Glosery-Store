@@ -1,0 +1,16 @@
+---
+import Hero from '../components/Hero.astro';
+import Decorative from '../components/Decorative.astro';
+import CardFooter from '../components/CardFooter.astro';
+---
+<section class="grid grid-cols-1 gap-4 py-5 w-11/12 mx-auto">
+    <Hero/>
+    <Decorative/>
+    <footer class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-4">
+        <CardFooter titleCard='Dairy Products' descriptionCard='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel doloremque, eum ab alias officia dolorem.' imgCard='./public/dairy.png'/>
+        <CardFooter titleCard='Vegetables & Fruits' descriptionCard='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel doloremque, eum ab alias officia dolorem.' imgCard='./public/fruits.png'/>
+        <CardFooter titleCard='Spices & Seasonings' descriptionCard='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel doloremque, eum ab alias officia dolorem.' imgCard='./public/spices.png'/>
+        <CardFooter titleCard='Honey' descriptionCard='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel doloremque, eum ab alias officia dolorem.' imgCard='./public/honey.png'/>
+        <CardFooter titleCard='Flour' descriptionCard='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel doloremque, eum ab alias officia dolorem.' imgCard='./public/flour.png'/>
+    </footer>
+</section>

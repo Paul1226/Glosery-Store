@@ -1,0 +1,55 @@
+---
+
+---
+
+<header class="flex flex-col gap-3">
+    <h1
+        class="font-montserrat font-bold text-[2.125rem] leading-10 text-balance text-masala"
+    >
+        Let your <span class="text-salmon">groceries</span> come to you
+    </h1>
+    <p class="text-pretty text-mountain">
+        Get fresh groceries online without stepping out to make delicious food
+        with the freshest ingredients
+    </p>
+    <form class="flex items-center">
+        <label for="search" class="sr-only"></label>
+        <input
+            class="p-2 border-2 border-r-0 rounded-l-lg bg-gray-100"
+            type="search"
+            id="search"
+            placeholder="Search here..."
+            required
+        />
+        <button class="bg-salmon h-full px-4 rounded-r-lg" type="submit">
+            <svg
+                class="w-4 fill-white"
+                viewBox="0 0 512 512"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    d="M504.352,459.061l-99.435-99.477c74.402-99.427,54.115-240.344-45.312-314.746S119.261-9.277,44.859,90.15   S-9.256,330.494,90.171,404.896c79.868,59.766,189.565,59.766,269.434,0l99.477,99.477c12.501,12.501,32.769,12.501,45.269,0   c12.501-12.501,12.501-32.769,0-45.269L504.352,459.061z M225.717,385.696c-88.366,0-160-71.634-160-160s71.634-160,160-160   s160,71.634,160,160C385.623,314.022,314.044,385.602,225.717,385.696z"
+                ></path>
+            </svg>
+        </button>
+    </form>
+    <ul class="grid grid-cols-2 gap-2">
+        <li class="">Fresh Vegetables</li>
+        <li class="">100% Guarantee</li>
+        <li class="">Cash on Delivery</li>
+        <li class="">Fast Delivery</li>
+    </ul>
+</header>
+
+<style>
+    li{
+        @apply flex items-center text-sm relative text-mountain;
+    }
+    li::before{
+        content: url('../public/Check.svg');
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+</style>

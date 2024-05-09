@@ -1,0 +1,16 @@
+---
+interface Props {
+    titleCard:string
+    descriptionCard:string
+    imgCard:string
+}
+const {titleCard, descriptionCard, imgCard} = Astro.props
+---
+
+<article class="border border-solid border-gray-200 rounded-lg pl-4 pb-4">
+    <picture>
+        <img src={imgCard} alt=`Icono de ${titleCard}`>
+    </picture>
+    <h3 class="text-lg text-masala font-semibold">{titleCard}</h3>
+    <p class="text-sm text-mountain text-pretty">{descriptionCard}</p>
+</article>
