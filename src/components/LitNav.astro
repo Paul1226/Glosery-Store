@@ -6,9 +6,18 @@ const {link} = Astro.props
 console.log(link)
 ---
 <li class="">
-    <a class="text-sm flex flex-col items-center group relative before:w-max before:absolute before:top-[160%] before:left-1/2 before:-translate-x-1/2 before:bg-masala before:text-white before:text-xs before:px-2 before:py-1 before:rounded-md before:hidden hover:before:block" href="/">
-        <svg class="w-7 stroke-masala fill-transparent transition-colors duration-300 group-hover:fill-masala" viewBox="0 0 24 24" stroke="none" stroke-width="1.5" fill="none" slot="icon" xmlns="http://www.w3.org/2000/svg">
+    <a class="links text-sm flex flex-col items-center py-4 border-b-4 border-solid border-transparent hover:bg-gray-100" href="/">
+        <svg class="w-7 stroke-mountain fill-transparent transition-colors duration-300" viewBox="0 0 24 24" stroke="none" stroke-width="2" fill="none" slot="icon" xmlns="http://www.w3.org/2000/svg">
             <slot name="icon"/>
         </svg>
     </a>
 </li>
+
+<style>
+    a.active{
+        @apply border-salmon bg-transparent;
+        svg{
+            @apply fill-salmon stroke-salmon;
+        }
+    }
+</style>
